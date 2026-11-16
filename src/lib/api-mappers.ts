@@ -19,6 +19,7 @@ export type RawRecipeSummary = {
   title: string;
   author: string | null;
   category: string;
+  photo_path?: string | null;
   updated_at: string;
   deleted_at?: string;
 };
@@ -50,6 +51,8 @@ export type RecipeSummary = {
   title: string;
   author: string | null;
   category: CategoryCode;
+  /** Storage path of the dish photo (lib/photo.ts builds the URL), or null. */
+  photoPath: string | null;
   updatedAt: string;
 };
 
@@ -80,6 +83,7 @@ export function toRecipeSummary(raw: RawRecipeSummary): RecipeSummary {
     title: raw.title,
     author: raw.author ?? null,
     category: toCategory(raw.category),
+    photoPath: raw.photo_path ?? null,
     updatedAt: raw.updated_at,
   };
 }

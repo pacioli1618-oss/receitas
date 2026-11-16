@@ -13,6 +13,7 @@ test('toFullBookView converts rc_get_book (with details) to camelCase', () => {
     title: 'Bolo de fubá cremoso',
     author: 'Vó Lurdes',
     category: 'sweets',
+    photoPath: '0d07a622-f8e5-4552-b5ed-465293e72cd3/k2v8x9qw3m4n5p6r.webp',
     updatedAt: '2026-11-16T14:08:13.374592+00:00',
     ingredients: '3 ovos',
     steps: 'Bata.',

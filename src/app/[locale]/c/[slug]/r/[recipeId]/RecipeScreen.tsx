@@ -14,6 +14,7 @@ import {usePreferences} from '@/hooks/use-device-store';
 import {useOrigin} from '@/hooks/use-origin';
 import {useIsWakeLockSupported, useWakeLock} from '@/hooks/use-wake-lock';
 import {setPreferences, textSizes, type TextSize} from '@/lib/device-store';
+import {buildPhotoUrl} from '@/lib/photo';
 import {buildRecipeMessage, splitIngredients, splitSteps} from '@/lib/recipe-text';
 import {buildRecipeUrl, buildWhatsAppUrl} from '@/lib/share-links';
 import styles from './RecipeScreen.module.css';
@@ -66,6 +67,11 @@ export function RecipeScreen({slug, recipeId}: {slug: string; recipeId: string})
           </button>
         </div>
       </header>
+
+      {recipe.photoPath && (
+        // eslint-disable-next-line @next/next/no-img-element -- public Storage file, already resized on upload
+        <img src={buildPhotoUrl(recipe.photoPath)} alt={t('photoAlt', {title: recipe.title})} className={styles.photo} />
+      )}
 
       <div className={styles.heading}>
         <span className={bookStyles.tag}>{categories(recipe.category)}</span>

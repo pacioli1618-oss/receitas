@@ -17,6 +17,7 @@ import {
   type RawRecipeSummary,
 } from './api-mappers';
 import type {Database} from './database.types';
+import {PhotoError, randomPhotoName, thumbPath, type PreparedPhoto} from './photo';
 import {supabase} from './supabase';
 
 export type * from './api-mappers';
@@ -119,4 +120,26 @@ export async function restoreRecipe(slug: string, recipeId: string) {
 
 export async function getTrash(slug: string) {
   return toTrashedRecipes((await call('rc_get_trash', {p_slug: slug})) as unknown as RawRecipeSummary[]);
+}
+
+// ---------------------------------------------------------------------------
+// Dish photo
+// ---------------------------------------------------------------------------
+
+/**
+ * Uploads the photo and its thumbnail to Storage, then attaches them to the recipe.
+ * Storage only takes files for a recipe that exists; attaching needs the book slug.
+ */
+export async function saveRecipePhoto(slug: string, recipeId: string, photo: PreparedPhoto) {
+  const path = `${recipeId}/${randomPhotoName()}.${photo.extension}`;
+  const bucket = supabase.storage.from('receitas');
+  const options = {contentType: photo.contentType, cacheControl: '31536000', upsert: false};
+  const [full, thumb] = await Promise.all([bucket.upload(path, photo.full, options), bucket.upload(thumbPath(path), photo.thumb, options)]);
+  if (full.error || thumb.error) throw new PhotoError('photo_upload_failed');
+  await call('rc_set_recipe_photo', {p_slug: slug, p_recipe_id: recipeId, p_photo_path: path});
+  return path;
+}
+
+export async function removeRecipePhoto(slug: string, recipeId: string) {
+  await call('rc_set_recipe_photo', {p_slug: slug, p_recipe_id: recipeId, p_photo_path: null as unknown as string});
 }

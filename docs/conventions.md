@@ -16,6 +16,7 @@ One concept, one word, everywhere: database, TypeScript, i18n keys and docs. Whe
 | Ingredientes | `ingredients` | free text, one per line; `splitIngredients()` |
 | Modo de preparo | `steps` | free text; `splitSteps()` |
 | Dica ou lembrança | `tip` | `recipes.tip` |
+| Foto do prato | `photo` | `recipes.photo_path`, `PhotoField`, `saveRecipePhoto()`, `lib/photo.ts` |
 | Lixeira | `trash` | `recipes.deleted_at`, `rc_get_trash`, `rc_restore_recipe` |
 | Modo cozinha | `kitchen mode` | `RecipeScreen` |
 | Tela sempre acesa | `wake lock` / `screen kept on` | `useWakeLock()`, `isScreenKeptOn` |
@@ -124,7 +125,7 @@ how many recipes it has, never the recipes. Book pages are `noindex`.
 | `src/components/ui/` | Design System primitives with no domain knowledge: `Button`, `TextField`, `TextAreaField`, `Card`, `CopyButton`, `Icon` |
 | `src/components/book/` | Components that know the domain: `RecipeForm`, `LinkBox`, `BookError`, `StatusScreen` |
 | `src/hooks/` | React hooks shared across screens: `use-loader.ts`, `use-book.ts`, `use-device-store.ts`, `use-install.ts`, `use-wake-lock.ts`, `use-origin.ts` |
-| `src/lib/` | Framework-free logic and the database door: `api.ts`, `api-mappers.ts`, `share-links.ts`, `recipe-text.ts`, `install.ts`, `clipboard.ts`, `device-store.ts` |
+| `src/lib/` | Framework-free logic and the database door: `api.ts`, `api-mappers.ts`, `share-links.ts`, `recipe-text.ts`, `photo.ts`, `install.ts`, `clipboard.ts`, `device-store.ts` |
 | `src/i18n/` | Locales, routing, formatting helpers |
 
 ## 11. Environment variables

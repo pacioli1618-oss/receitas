@@ -9,12 +9,15 @@ import {TextAreaField} from '@/components/ui/TextAreaField';
 import {TextField} from '@/components/ui/TextField';
 import {useRpcErrorMessage} from '@/i18n/errors';
 import {categoryCodes, type RecipeInput} from '@/lib/api';
+import {PhotoField, type PhotoChange} from './PhotoField';
 import styles from './RecipeForm.module.css';
 
 type RecipeFormProps = {
   initial?: RecipeInput;
+  /** Edit: the photo the recipe already has. */
+  initialPhotoPath?: string | null;
   /** Throws on failure; the form shows the translated error. */
-  onSubmit: (input: RecipeInput) => Promise<void>;
+  onSubmit: (input: RecipeInput, photo: PhotoChange) => Promise<void>;
   /** Edit only: send the recipe to the trash. */
   onDelete?: () => Promise<void>;
 };
@@ -22,13 +25,14 @@ type RecipeFormProps = {
 const emptyRecipe: RecipeInput = {title: '', author: '', category: 'other', ingredients: '', steps: '', tip: ''};
 
 /** New recipe and edit recipe: same fields, written the way the person who taught it would. */
-export function RecipeForm({initial = emptyRecipe, onSubmit, onDelete}: RecipeFormProps) {
+export function RecipeForm({initial = emptyRecipe, initialPhotoPath = null, onSubmit, onDelete}: RecipeFormProps) {
   const t = useTranslations('RecipeForm');
   const common = useTranslations('Common');
   const categories = useTranslations('Categories');
   const rpcErrorMessage = useRpcErrorMessage();
 
   const [values, setValues] = useState<RecipeInput>(initial);
+  const [photo, setPhoto] = useState<PhotoChange>({kind: 'keep'});
   const [titleError, setTitleError] = useState<string | null>(null);
   const [formError, setFormError] = useState<string | null>(null);
   const [isSaving, setIsSaving] = useState(false);
@@ -46,7 +50,7 @@ export function RecipeForm({initial = emptyRecipe, onSubmit, onDelete}: RecipeFo
     setFormError(null);
     setIsSaving(true);
     try {
-      await onSubmit({...values, title: values.title.trim(), author: values.author.trim(), tip: values.tip.trim()});
+      await onSubmit({...values, title: values.title.trim(), author: values.author.trim(), tip: values.tip.trim()}, photo);
     } catch (error) {
       setFormError(rpcErrorMessage(error));
       setIsSaving(false);
@@ -95,6 +99,8 @@ export function RecipeForm({initial = emptyRecipe, onSubmit, onDelete}: RecipeFo
         onChange={(event) => set('author', event.target.value)}
         maxLength={60}
       />
+
+      <PhotoField currentPath={initialPhotoPath} value={photo} onChange={setPhoto} />
 
       <fieldset className={styles.categories}>
         <legend className={styles.legend}>{t('category')}</legend>

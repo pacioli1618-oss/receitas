@@ -87,7 +87,15 @@
     "tipPlaceholder": "E.g. Grandma always made it on Sundays.",
     "save": "Save recipe",
     "delete": "Move to trash",
-    "deleteConfirm": "Move this recipe to the trash? Anyone with the book can bring it back within 30 days."
+    "deleteConfirm": "Move this recipe to the trash? Anyone with the book can bring it back within 30 days.",
+    "photo": "Photo of the dish",
+    "photoHint": "A photo helps people spot the recipe in the list and in the printed version.",
+    "photoAdd": "Take or choose a photo",
+    "photoChange": "Change photo",
+    "photoRemove": "Remove photo",
+    "photoPreparing": "Preparing the photo…",
+    "photoPreview": "Chosen photo of the dish",
+    "photoFailedNotice": "The recipe was saved, but the photo wasn't sent. Choose the photo again and tap Save."
   },
   "Recipe": {
     "back": "Recipes",
@@ -107,7 +115,8 @@
     "whatsApp": "WhatsApp",
     "print": "Print",
     "edit": "Edit",
-    "messageLink": "See it in the family book:"
+    "messageLink": "See it in the family book:",
+    "photoAlt": "Photo of the dish: {title}"
   },
   "Trash": {
     "title": "Trash",
@@ -131,7 +140,8 @@
     "coverSubtitle": "Recipes from the people we love",
     "coverMeta": "{count, plural, one {# recipe} other {# recipes}} · printed {date}",
     "contents": "Contents",
-    "qrHint": "To see it on a phone or change something, point the camera at the code."
+    "qrHint": "To see it on a phone or change something, point the camera at the code.",
+    "includePhotos": "Include photos of the dishes"
   },
   "Preview": {
     "chip": "Recipe book",
@@ -153,7 +163,10 @@
     "recipe_too_long": "The recipe is too long. Try shortening the method.",
     "rate_limited": "You created many books in a short time. {period, select, day {Try again tomorrow.} other {Try again in an hour.}}",
     "network": "No connection. Your change was not saved.",
-    "unknown": "Something went wrong. Try again."
+    "unknown": "Something went wrong. Try again.",
+    "photo_not_found": "The photo didn't arrive in full. Try sending it again.",
+    "photo_unreadable": "Couldn't open that photo. Try another one, or take a new one.",
+    "photo_upload_failed": "The photo wasn't sent. Check your connection and try again."
   },
   "LocaleSwitcher": {
     "label": "Language"
@@ -203,13 +216,13 @@
     "sections": {
       "collect": {
         "title": "What we keep",
-        "p1": "The book's name and the recipes the family writes: name, whose recipe it is, category, ingredients, method and tips.",
+        "p1": "The book's name and the recipes the family writes: name, whose recipe it is, category, ingredients, method, tips and a photo of the dish, if someone adds one.",
         "p2": "A random code for the device, which recognizes you without an account.",
         "p3": "To prevent abuse, we log book creation with a scrambled (hashed) version of the IP address. That log is deleted within 1 day."
       },
       "visibility": {
         "title": "Who sees what",
-        "p1": "Anyone with the book link sees every recipe and can add, edit or move recipes to the trash. The link preview (on WhatsApp, for example) shows only the book's name and how many recipes it has."
+        "p1": "Anyone with the book link sees every recipe and can add, edit or move recipes to the trash. Dish photos have their own public address, which does not open the book. The link preview (on WhatsApp, for example) shows only the book's name and how many recipes it has."
       },
       "device": {
         "title": "On your device",

@@ -10,6 +10,10 @@ export const rpcErrorCodes = [
   'recipe_title_required',
   'recipe_too_long',
   'rate_limited',
+  'photo_not_found',
+  // Raised in the browser by lib/photo.ts and saveRecipePhoto, not by an RPC.
+  'photo_unreadable',
+  'photo_upload_failed',
 ] as const;
 export type RpcErrorCode = (typeof rpcErrorCodes)[number];
 

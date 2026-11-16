@@ -87,7 +87,15 @@
     "tipPlaceholder": "Ej.: la abuela siempre lo hacía los domingos.",
     "save": "Guardar receta",
     "delete": "Mandar a la papelera",
-    "deleteConfirm": "¿Mandar esta receta a la papelera? Cualquiera con el cuaderno puede recuperarla en 30 días."
+    "deleteConfirm": "¿Mandar esta receta a la papelera? Cualquiera con el cuaderno puede recuperarla en 30 días.",
+    "photo": "Foto del plato",
+    "photoHint": "Una foto ayuda a reconocer la receta en la lista y en la versión impresa.",
+    "photoAdd": "Tomar o elegir foto",
+    "photoChange": "Cambiar foto",
+    "photoRemove": "Quitar la foto",
+    "photoPreparing": "Preparando la foto…",
+    "photoPreview": "Foto del plato elegida",
+    "photoFailedNotice": "La receta se guardó, pero la foto no se envió. Elige la foto otra vez y toca Guardar."
   },
   "Recipe": {
     "back": "Recetas",
@@ -107,7 +115,8 @@
     "whatsApp": "WhatsApp",
     "print": "Imprimir",
     "edit": "Editar",
-    "messageLink": "Mírala en el cuaderno de la familia:"
+    "messageLink": "Mírala en el cuaderno de la familia:",
+    "photoAlt": "Foto del plato: {title}"
   },
   "Trash": {
     "title": "Papelera",
@@ -131,7 +140,8 @@
     "coverSubtitle": "Recetas de la gente que queremos",
     "coverMeta": "{count, plural, one {# receta} other {# recetas}} · impreso en {date}",
     "contents": "Índice",
-    "qrHint": "Para verla en el celular o cambiar algo, apunta la cámara al código."
+    "qrHint": "Para verla en el celular o cambiar algo, apunta la cámara al código.",
+    "includePhotos": "Incluir las fotos de los platos"
   },
   "Preview": {
     "chip": "Recetario",
@@ -153,7 +163,10 @@
     "recipe_too_long": "La receta quedó demasiado larga. Intenta acortar la preparación.",
     "rate_limited": "Creaste muchos cuadernos en poco tiempo. {period, select, day {Intenta de nuevo mañana.} other {Intenta de nuevo en una hora.}}",
     "network": "Sin conexión. Tu cambio no se guardó.",
-    "unknown": "Algo salió mal. Intenta de nuevo."
+    "unknown": "Algo salió mal. Intenta de nuevo.",
+    "photo_not_found": "La foto no llegó completa. Intenta enviarla de nuevo.",
+    "photo_unreadable": "No se pudo abrir esa foto. Prueba otra o toma una nueva.",
+    "photo_upload_failed": "La foto no se envió. Revisa la conexión e intenta de nuevo."
   },
   "LocaleSwitcher": {
     "label": "Idioma"
@@ -203,13 +216,13 @@
     "sections": {
       "collect": {
         "title": "Qué guardamos",
-        "p1": "El nombre del cuaderno y las recetas que escribe la familia: nombre, de quién es, categoría, ingredientes, preparación y consejos.",
+        "p1": "El nombre del cuaderno y las recetas que escribe la familia: nombre, de quién es, categoría, ingredientes, preparación, consejos y la foto del plato, si alguien la agrega.",
         "p2": "Un código aleatorio del dispositivo, que te reconoce sin registro.",
         "p3": "Para evitar abusos, registramos la creación de cuadernos con una versión cifrada (hash) de la dirección IP. Ese registro se borra en máximo 1 día."
       },
       "visibility": {
         "title": "Quién ve qué",
-        "p1": "Quien tenga el link del cuaderno ve todas las recetas y puede agregar, editar o mandar recetas a la papelera. La vista previa del link (en WhatsApp, por ejemplo) muestra solo el nombre del cuaderno y cuántas recetas tiene."
+        "p1": "Quien tenga el link del cuaderno ve todas las recetas y puede agregar, editar o mandar recetas a la papelera. Las fotos de los platos tienen su propia dirección pública, que no abre el cuaderno. La vista previa del link (en WhatsApp, por ejemplo) muestra solo el nombre del cuaderno y cuántas recetas tiene."
       },
       "device": {
         "title": "En tu dispositivo",

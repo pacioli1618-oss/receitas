@@ -57,6 +57,10 @@ export type Database = {
         Args: { p_recipe_id: string; p_slug: string }
         Returns: undefined
       }
+      rc_set_recipe_photo: {
+        Args: { p_photo_path: string; p_recipe_id: string; p_slug: string }
+        Returns: undefined
+      }
       rc_update_book: {
         Args: { p_slug: string; p_title: string }
         Returns: undefined

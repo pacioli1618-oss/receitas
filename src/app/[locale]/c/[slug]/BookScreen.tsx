@@ -15,6 +15,7 @@ import {usePreferences} from '@/hooks/use-device-store';
 import {Link} from '@/i18n/navigation';
 import {categoryCodes, type CategoryCode} from '@/lib/api';
 import {matchesSearch} from '@/lib/recipe-text';
+import {buildPhotoUrl} from '@/lib/photo';
 import {buildBookUrl} from '@/lib/share-links';
 import styles from './BookScreen.module.css';
 
@@ -97,6 +98,10 @@ export function BookScreen({slug}: {slug: string}) {
               {visible.map((recipe) => (
                 <li key={recipe.id}>
                   <Link href={`/c/${slug}/r/${recipe.id}`} className={styles.card}>
+                    {recipe.photoPath && (
+                      // eslint-disable-next-line @next/next/no-img-element -- 360px thumbnail made on upload
+                      <img src={buildPhotoUrl(recipe.photoPath, 'thumb')} alt="" className={styles.thumb} loading="lazy" />
+                    )}
                     <span className={styles.cardText}>
                       <span className={styles.cardTitle}>{recipe.title}</span>
                       <span className={styles.cardMeta}>

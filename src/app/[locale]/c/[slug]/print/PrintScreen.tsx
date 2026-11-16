@@ -14,6 +14,7 @@ import {Icon} from '@/components/ui/Icon';
 import {useLoader} from '@/hooks/use-loader';
 import {useOrigin} from '@/hooks/use-origin';
 import {categoryCodes, getFullBook, getRecipe, type Recipe} from '@/lib/api';
+import {buildPhotoUrl} from '@/lib/photo';
 import {splitIngredients, splitSteps} from '@/lib/recipe-text';
 import {buildBookUrl, buildRecipeUrl, displayUrl} from '@/lib/share-links';
 import styles from './PrintScreen.module.css';
@@ -29,6 +30,7 @@ export function PrintScreen({slug}: {slug: string}) {
   const recipeId = useSearchParams().get('recipe');
   const [scope, setScope] = useState<Scope>(recipeId ? 'recipe' : 'book');
   const [hasTips, setHasTips] = useState(true);
+  const [hasPhotos, setHasPhotos] = useState(true);
   const origin = useOrigin();
 
   const isSingle = scope === 'recipe' && Boolean(recipeId);
@@ -80,6 +82,11 @@ export function PrintScreen({slug}: {slug: string}) {
           <span>{t('includeTips')}</span>
         </label>
 
+        <label className={styles.checkbox}>
+          <input type="checkbox" checked={hasPhotos} onChange={(event) => setHasPhotos(event.target.checked)} />
+          <span>{t('includePhotos')}</span>
+        </label>
+
         <div className={screen.stack}>
           <Button size="cta" isFullWidth onClick={() => window.print()} disabled={data.recipes.length === 0}>
             <Icon name="print" />
@@ -94,13 +101,13 @@ export function PrintScreen({slug}: {slug: string}) {
       {data.recipes.length === 0 ? (
         <p className={screen.hint}>{t('emptyBook')}</p>
       ) : (
-        <PrintPages slug={slug} origin={origin} printable={data} isWholeBook={!isSingle} hasTips={hasTips} />
+        <PrintPages slug={slug} origin={origin} printable={data} isWholeBook={!isSingle} hasTips={hasTips} hasPhotos={hasPhotos} />
       )}
     </main>
   );
 }
 
-function PrintPages({slug, origin, printable, isWholeBook, hasTips}: {slug: string; origin: string; printable: Printable; isWholeBook: boolean; hasTips: boolean}) {
+function PrintPages({slug, origin, printable, isWholeBook, hasTips, hasPhotos}: {slug: string; origin: string; printable: Printable; isWholeBook: boolean; hasTips: boolean; hasPhotos: boolean}) {
   const t = useTranslations('Print');
   const recipeT = useTranslations('Recipe');
   const categories = useTranslations('Categories');
@@ -193,6 +200,11 @@ function PrintPages({slug, origin, printable, isWholeBook, hasTips}: {slug: stri
             <RunningHead left={printable.bookTitle} right={categories(recipe.category)} />
             <h2 className={styles.recipeTitle}>{recipe.title}</h2>
             {recipe.author && <p className={styles.byline}>{recipeT.rich('bylineRich', {author: recipe.author, strong: (chunks) => <strong>{chunks}</strong>})}</p>}
+
+            {hasPhotos && recipe.photoPath && (
+              // eslint-disable-next-line @next/next/no-img-element -- printed as is; already resized on upload
+              <img src={buildPhotoUrl(recipe.photoPath)} alt={recipeT('photoAlt', {title: recipe.title})} className={styles.photo} />
+            )}
 
             <div className={styles.columns}>
               {ingredients.length > 0 && (

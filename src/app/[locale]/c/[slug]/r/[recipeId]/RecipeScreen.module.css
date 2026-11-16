@@ -39,6 +39,24 @@
   cursor: not-allowed;
 }
 
+.photo {
+  display: block;
+  width: calc(100% + 2 * var(--space-5));
+  max-width: none;
+  margin: -6px calc(-1 * var(--space-5)) 0;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--divider);
+}
+
+@media (min-width: 600px) {
+  .photo {
+    width: 100%;
+    margin: 0;
+    border-radius: var(--radius-lg);
+  }
+}
+
 .heading {
   display: flex;
   flex-direction: column;

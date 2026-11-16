@@ -1,0 +1,85 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.optional {
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+.hint {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--ink-muted);
+}
+
+.preview {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--divider);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.pick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--size-field);
+  padding: 0 18px;
+  border: 1.5px solid var(--border-control);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pick[aria-busy='true'] {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* The file input is hidden: show its keyboard focus on the visible button. */
+.field input:focus-visible + .actions .pick {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.remove {
+  min-height: var(--size-control);
+  padding: 0 12px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-muted);
+  font-size: 17px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ember-strong);
+}

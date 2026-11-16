@@ -6,7 +6,9 @@ project** (sa-east-1), shared with QuemLeva, O Que Falta and AmigoSecreto, in it
 ## 1. Database
 
 `supabase/migrations/20261116000100_receitas_schema.sql` creates the `receitas` schema and the
-`public.rc_*` functions. It does not touch the other apps' schemas. It was applied on 2026-11-16.
+`public.rc_*` functions. It does not touch the other apps' schemas.
+`20261116000200_recipe_photos.sql` adds the dish photo: the public Storage bucket `receitas` and its
+upload policy (only into the folder of an existing recipe). Both were applied on 2026-11-16.
 
 ## 2. Vercel project
 
@@ -35,7 +37,8 @@ project** (sa-east-1), shared with QuemLeva, O Que Falta and AmigoSecreto, in it
 ## 4. Smoke test after each deploy
 
 1. Phone A: create a book, send the link to phone B on WhatsApp. The preview card shows the book name.
-2. Phone B: open the link, add a recipe by pasting text from a WhatsApp chat.
+2. Phone B: open the link, add a recipe by pasting text from a WhatsApp chat, with a photo taken
+   right there. The photo shows on top of the recipe, as a thumbnail in the list and on the printed page.
 3. Phone A: open the recipe. A+ makes the text bigger; ticking an ingredient strikes it through;
    the screen stays on (Chrome on Android, Safari 16.4+).
 4. Send the recipe on WhatsApp: the message has the title, ingredients, steps and the link.

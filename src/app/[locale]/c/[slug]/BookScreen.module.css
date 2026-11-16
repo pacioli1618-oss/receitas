@@ -115,6 +115,16 @@
   text-decoration: none;
 }
 
+.thumb {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  margin: -4px 0 -4px -6px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: var(--divider);
+}
+
 .card svg {
   flex: none;
   color: var(--ink-muted);

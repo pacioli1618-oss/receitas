@@ -2,7 +2,7 @@
 
 The family recipe book on everyone's phone. One link for the whole family: anyone who has it
 can read, add and edit recipes. Built for parents and grandparents: large legible text, a kitchen
-mode that keeps the screen on, a printable A4 version (one recipe, or the whole book with
+mode that keeps the screen on, a photo of the dish, a printable A4 version (one recipe, or the whole book with
 cover and contents) and a "pin to home screen" card that installs it like an app.
 
 An experiment by [GR1618 Labs](https://gr1618.io), in the same family as QuemLeva, O Que Falta and
@@ -11,7 +11,8 @@ AmigoSecreto. Free, no sign-up, open source (AGPL-3.0).
 - **Stack:** Next.js 16 (App Router, `cacheComponents`), next-intl 4, Supabase (Postgres RPCs only), Vercel.
 - **Languages:** pt-BR (default), es, en. See `docs/i18n.md`.
 - **Database:** schema `receitas` in the SideKick Supabase project, reached only through the
-  `public.rc_*` functions (`supabase/migrations/`).
+  `public.rc_*` functions (`supabase/migrations/`). Dish photos: public Storage bucket `receitas`,
+  shrunk in the browser before upload (`src/lib/photo.ts`).
 
 ## Screens
 
