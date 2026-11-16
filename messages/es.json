@@ -213,7 +213,7 @@
       },
       "device": {
         "title": "En tu dispositivo",
-        "p1": "El navegador guarda el código del dispositivo, la lista de \"Mis cuadernos\", el tamaño de letra elegido y una cookie con el idioma. No usamos cookies de publicidad ni de rastreo."
+        "p1": "El navegador guarda el código del dispositivo, la lista de \"Mis cuadernos\", el tamaño de letra elegido, si descartaste el aviso de fijar la app y una cookie con el idioma. No usamos cookies de publicidad ni de rastreo."
       },
       "providers": {
         "title": "Servicios que usamos",
@@ -259,5 +259,18 @@
         "p1": "Estos términos siguen las leyes de Brasil."
       }
     }
+  },
+  "Install": {
+    "title": "Fijar en la pantalla del celular",
+    "body": "El cuaderno tiene un ícono junto a tus otras apps y abre directo en las recetas, sin buscar el link.",
+    "button": "Fijar ahora",
+    "notNow": "Ahora no",
+    "shareIconLabel": "Compartir",
+    "iosStep1": "Toca el botón <strong>Compartir</strong> <icon></icon> en la barra del navegador.",
+    "iosStep2": "Desliza la lista y toca <strong>Agregar a inicio</strong>.",
+    "iosStep3": "Toca <strong>Agregar</strong>. Listo: el cuaderno aparece junto a tus otras apps.",
+    "menuStep1": "Toca el menú <strong>⋮</strong> en la esquina del navegador.",
+    "menuStep2": "Toca <strong>Instalar app</strong> o <strong>Agregar a la pantalla principal</strong>.",
+    "inApp": "Desde WhatsApp no se puede fijar. Copia el link, ábrelo en Chrome o Safari y toca otra vez \"Fijar en la pantalla\"."
   }
 }

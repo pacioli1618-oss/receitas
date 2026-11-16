@@ -213,7 +213,7 @@
       },
       "device": {
         "title": "On your device",
-        "p1": "The browser keeps the device code, the \"My books\" list, your text size and a cookie with your language. We use no advertising or tracking cookies."
+        "p1": "The browser keeps the device code, the \"My books\" list, your text size, whether you dismissed the pin-to-home-screen card and a cookie with your language. We use no advertising or tracking cookies."
       },
       "providers": {
         "title": "Services we use",
@@ -259,5 +259,18 @@
         "p1": "These terms follow the laws of Brazil."
       }
     }
+  },
+  "Install": {
+    "title": "Pin to your home screen",
+    "body": "The book gets an icon next to your other apps and opens straight to the recipes, no need to look for the link.",
+    "button": "Pin it now",
+    "notNow": "Not now",
+    "shareIconLabel": "Share",
+    "iosStep1": "Tap the <strong>Share</strong> button <icon></icon> in the browser bar.",
+    "iosStep2": "Scroll down and tap <strong>Add to Home Screen</strong>.",
+    "iosStep3": "Tap <strong>Add</strong>. Done: the book shows up with your other apps.",
+    "menuStep1": "Tap the <strong>⋮</strong> menu in the browser's corner.",
+    "menuStep2": "Tap <strong>Install app</strong> or <strong>Add to Home screen</strong>.",
+    "inApp": "You can't pin it from inside WhatsApp. Copy the link, open it in Chrome or Safari and tap \"Pin to home screen\" again."
   }
 }

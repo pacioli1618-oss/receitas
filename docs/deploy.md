@@ -41,3 +41,5 @@ project** (sa-east-1), shared with QuemLeva, O Que Falta and AmigoSecreto, in it
 4. Send the recipe on WhatsApp: the message has the title, ingredients, steps and the link.
 5. Print → "O caderno inteiro" → Save as PDF: cover, contents, one recipe per page, QR codes open the recipe.
 6. Edit → "Mandar para a lixeira", then restore it from the trash.
+7. "Fixar na tela do celular": on Android (Chrome) one tap installs it; on iPhone (Safari) the card
+   shows the Share → Add to Home Screen steps. Opening the icon goes straight to the last book.

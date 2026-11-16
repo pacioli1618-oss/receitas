@@ -2,6 +2,7 @@ import type {Metadata, Viewport} from 'next';
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale, getTranslations} from 'next-intl/server';
 import localFont from 'next/font/local';
+import {InstallListener} from '@/components/install/InstallListener';
 import {routing} from '@/i18n/routing';
 import '../globals.css';
 
@@ -65,6 +66,7 @@ export default async function LocaleLayout({children}: LayoutProps<'/[locale]'>)
     <html lang={locale} className={`${atkinson.variable} ${fraunces.variable}`}>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <InstallListener />
       </body>
     </html>
   );

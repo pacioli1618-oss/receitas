@@ -4,6 +4,7 @@ import {useSearchParams} from 'next/navigation';
 import {useTranslations} from 'next-intl';
 import {BookError} from '@/components/book/BookError';
 import {LinkBox} from '@/components/book/LinkBox';
+import {InstallCard} from '@/components/install/InstallCard';
 import {StatusScreen} from '@/components/book/StatusScreen';
 import {AppHeader, BackLink} from '@/components/layout/AppHeader';
 import screen from '@/components/layout/Screen.module.css';
@@ -59,6 +60,8 @@ export function LinkScreen({slug}: {slug: string}) {
         <Icon name="cloud" className={screen.noticeIcon} />
         <p>{t('cloudNote')}</p>
       </div>
+
+      <InstallCard url={url} />
 
       {isJustCreated && (
         <ButtonLink href={`/c/${slug}`} variant="ghost" size="cta" isFullWidth>

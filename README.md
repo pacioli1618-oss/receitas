@@ -2,8 +2,8 @@
 
 The family recipe book on everyone's phone. One link for the whole family: anyone who has it
 can read, add and edit recipes. Built for parents and grandparents: large legible text, a kitchen
-mode that keeps the screen on, and a printable A4 version (one recipe, or the whole book with
-cover and contents).
+mode that keeps the screen on, a printable A4 version (one recipe, or the whole book with
+cover and contents) and a "pin to home screen" card that installs it like an app.
 
 An experiment by [GR1618 Labs](https://gr1618.io), in the same family as QuemLeva, O Que Falta and
 AmigoSecreto. Free, no sign-up, open source (AGPL-3.0).
@@ -17,7 +17,7 @@ AmigoSecreto. Free, no sign-up, open source (AGPL-3.0).
 
 | Route | Screen |
 | --- | --- |
-| `/` | Create a book; "My books" on this device |
+| `/` | Create a book; "My books" on this device. Opened from the home-screen icon, it jumps to the book used last. |
 | `/c/[slug]` | The book: search, categories, every recipe, "New recipe" |
 | `/c/[slug]/link` | The book link: copy, send to the family group, e-mail to yourself |
 | `/c/[slug]/new` | New recipe |

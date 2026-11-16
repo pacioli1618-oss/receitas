@@ -3,15 +3,19 @@
 import {useMemo, useState} from 'react';
 import {useTranslations} from 'next-intl';
 import {BookError} from '@/components/book/BookError';
+import {InstallCard} from '@/components/install/InstallCard';
 import {StatusScreen} from '@/components/book/StatusScreen';
 import {AppHeader} from '@/components/layout/AppHeader';
 import screen from '@/components/layout/Screen.module.css';
 import {ButtonLink} from '@/components/ui/Button';
 import {Icon} from '@/components/ui/Icon';
 import {useBook} from '@/hooks/use-book';
+import {useOrigin} from '@/hooks/use-origin';
+import {usePreferences} from '@/hooks/use-device-store';
 import {Link} from '@/i18n/navigation';
 import {categoryCodes, type CategoryCode} from '@/lib/api';
 import {matchesSearch} from '@/lib/recipe-text';
+import {buildBookUrl} from '@/lib/share-links';
 import styles from './BookScreen.module.css';
 
 type Filter = CategoryCode | 'all';
@@ -23,6 +27,8 @@ export function BookScreen({slug}: {slug: string}) {
   const {data: book, error, refresh} = useBook(slug);
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<Filter>('all');
+  const {isInstallCardDismissed} = usePreferences();
+  const origin = useOrigin();
 
   const usedCategories = useMemo(() => {
     const used = new Set(book?.recipes.map((recipe) => recipe.category));
@@ -105,6 +111,8 @@ export function BookScreen({slug}: {slug: string}) {
           )}
         </>
       )}
+
+      {!isInstallCardDismissed && <InstallCard isDismissible url={buildBookUrl(origin, slug)} />}
 
       {book.trashCount > 0 && (
         <Link href={`/c/${slug}/trash`} className={styles.trashLink}>

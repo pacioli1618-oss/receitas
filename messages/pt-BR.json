@@ -213,7 +213,7 @@
       },
       "device": {
         "title": "No seu aparelho",
-        "p1": "O navegador guarda o código do aparelho, a lista de \"Meus cadernos\", o tamanho da letra escolhido e um cookie com o idioma. Não usamos cookies de publicidade nem de rastreamento."
+        "p1": "O navegador guarda o código do aparelho, a lista de \"Meus cadernos\", o tamanho da letra escolhido, se você dispensou o aviso de fixar o app e um cookie com o idioma. Não usamos cookies de publicidade nem de rastreamento."
       },
       "providers": {
         "title": "Serviços que usamos",
@@ -259,5 +259,18 @@
         "p1": "Estes termos seguem as leis do Brasil."
       }
     }
+  },
+  "Install": {
+    "title": "Fixar na tela do celular",
+    "body": "O caderno ganha um ícone ao lado dos outros aplicativos e abre direto nas receitas, sem procurar o link.",
+    "button": "Fixar agora",
+    "notNow": "Agora não",
+    "shareIconLabel": "Compartilhar",
+    "iosStep1": "Toque no botão <strong>Compartilhar</strong> <icon></icon> na barra do navegador.",
+    "iosStep2": "Role a lista e toque em <strong>Adicionar à Tela de Início</strong>.",
+    "iosStep3": "Toque em <strong>Adicionar</strong>. Pronto: o caderno aparece junto com os outros aplicativos.",
+    "menuStep1": "Toque no menu <strong>⋮</strong> no canto do navegador.",
+    "menuStep2": "Toque em <strong>Instalar app</strong> ou <strong>Adicionar à tela inicial</strong>.",
+    "inApp": "Daqui de dentro do WhatsApp não dá para fixar. Copie o link, abra no Chrome ou no Safari e toque de novo em \"Fixar na tela do celular\"."
   }
 }

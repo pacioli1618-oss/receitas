@@ -13,7 +13,7 @@ export function useMyBooks(): StoredBook[] | null {
   return books ? Object.values(books).sort((a, b) => b.lastOpenedAt.localeCompare(a.lastOpenedAt)) : null;
 }
 
-const serverPreferences: DevicePreferences = {textSize: 0, isScreenKeptOn: true};
+const serverPreferences: DevicePreferences = {textSize: 0, isScreenKeptOn: true, isInstallCardDismissed: false};
 
 /** Letter size and screen-on choice, shared by every recipe on this device. */
 export function usePreferences(): DevicePreferences {

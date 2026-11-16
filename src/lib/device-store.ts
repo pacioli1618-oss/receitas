@@ -23,6 +23,8 @@ export type DevicePreferences = {
   textSize: TextSize;
   /** Keep the screen on while a recipe is open. */
   isScreenKeptOn: boolean;
+  /** "Agora não" on the "Fixar na tela do celular" card in the book. */
+  isInstallCardDismissed: boolean;
 };
 
 export type DeviceStore = {
@@ -34,7 +36,7 @@ export type DeviceStore = {
   preferences: DevicePreferences;
 };
 
-const defaultPreferences: DevicePreferences = {textSize: 0, isScreenKeptOn: true};
+const defaultPreferences: DevicePreferences = {textSize: 0, isScreenKeptOn: true, isInstallCardDismissed: false};
 
 function createEmptyStore(): DeviceStore {
   return {version: STORE_VERSION, deviceId: crypto.randomUUID(), books: {}, preferences: defaultPreferences};
