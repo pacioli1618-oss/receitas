@@ -1,0 +1,73 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  flex: 1;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.bookList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bookRow {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  overflow: hidden;
+}
+
+.bookLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 64px;
+  padding: 12px 16px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.bookLink svg:first-child {
+  color: var(--brand);
+  flex: none;
+}
+
+.bookTitle {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-serif);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.forget {
+  align-self: flex-start;
+  min-height: 44px;
+  margin: -6px 0 4px 8px;
+  padding: 0 8px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-muted);
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}

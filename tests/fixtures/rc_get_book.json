@@ -1,0 +1,19 @@
+{
+  "slug": "epdguf7endr7",
+  "title": "Família Teste",
+  "locale": "pt-BR",
+  "recipes": [
+    {
+      "id": "0d07a622-f8e5-4552-b5ed-465293e72cd3",
+      "tip": null,
+      "steps": "Bata.",
+      "title": "Bolo de fubá cremoso",
+      "author": "Vó Lurdes",
+      "category": "sweets",
+      "created_at": "2026-11-16T14:08:13.374592+00:00",
+      "updated_at": "2026-11-16T14:08:13.374592+00:00",
+      "ingredients": "3 ovos"
+    }
+  ],
+  "trash_count": 0
+}

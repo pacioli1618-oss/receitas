@@ -1,0 +1,152 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.linkAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--size-control);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 20px;
+  border: 1.5px dashed var(--border-control);
+  border-radius: var(--radius-lg);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: var(--size-field);
+  padding: 0 16px;
+  border: 1.5px solid var(--border-control);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--ink-muted);
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--ink);
+  font-size: 19px;
+}
+
+.search input::placeholder {
+  color: var(--ink-muted);
+}
+
+.search:focus-within {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin: 0 calc(-1 * var(--space-5));
+  padding: 0 var(--space-5) 2px;
+  scrollbar-width: none;
+}
+
+.chip {
+  flex: none;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border-control);
+  background: transparent;
+  color: var(--ink);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.chip[aria-pressed='true'] {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--surface);
+  font-weight: 700;
+}
+
+.countRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin: -8px 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 76px;
+  padding: 14px 16px 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.card svg {
+  flex: none;
+  color: var(--ink-muted);
+}
+
+.cardText {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.cardMeta {
+  font-size: 17px;
+  line-height: 22px;
+  color: var(--ink-muted);
+}
+
+.trashLink {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--size-control);
+  font-size: 17px;
+  color: var(--ink-muted);
+}

@@ -1,0 +1,263 @@
+{
+  "Brand": {
+    "name": "Recetas de Familia",
+    "shortName": "Recetas",
+    "wordmarkFirst": "Recetas",
+    "wordmarkSecond": "de Familia"
+  },
+  "Metadata": {
+    "title": "Recetas de Familia — el recetario familiar en el celular de todos",
+    "description": "Guarda las recetas de la familia en un cuaderno que todos abren con el link: letra grande, pantalla siempre encendida y versión para imprimir. Sin registro."
+  },
+  "Common": {
+    "tagline": "Gratis · Código abierto · Sin registro",
+    "endorsement": "un experimento de GR1618 Labs",
+    "loading": "Cargando…",
+    "optional": "opcional",
+    "cancel": "Cancelar",
+    "back": "Volver",
+    "backToBook": "Recetas",
+    "home": "Ir al inicio",
+    "retry": "Intentar de nuevo"
+  },
+  "Home": {
+    "headline": "El recetario de la familia, en el celular de todos",
+    "intro": "El pastel de la abuela o el adobo del pernil de Navidad, guardados en un solo lugar. Quien tenga el link puede ver y agregar recetas.",
+    "createTitle": "Crear un cuaderno",
+    "title": "Nombre del cuaderno",
+    "titleHint": "Aparece arriba del cuaderno y en la portada de la versión impresa.",
+    "titlePlaceholder": "Recetario de la Familia Pérez",
+    "titleRequired": "Ponle un nombre al cuaderno.",
+    "submit": "Crear el cuaderno",
+    "myBooks": "Mis cuadernos",
+    "forget": "Quitar de este celular",
+    "forgetConfirm": "¿Quitar \"{title}\" de este celular? El cuaderno sigue existiendo para la familia; solo pierdes el acceso directo aquí."
+  },
+  "Book": {
+    "bookLink": "Link del cuaderno",
+    "emptyTitle": "El cuaderno todavía está vacío.",
+    "emptyHint": "Empieza por la receta que más falta hace: la que alguien siempre pide en el grupo.",
+    "searchLabel": "Buscar receta",
+    "searchPlaceholder": "Buscar receta o persona",
+    "categoriesLabel": "Filtrar por categoría",
+    "allCategories": "Todas",
+    "recipeCount": "{count, plural, =0 {Ninguna receta} one {# receta} other {# recetas}}",
+    "printBook": "Imprimir el cuaderno",
+    "noMatch": "No hay recetas con ese nombre. Prueba otra palabra.",
+    "fromWithCategory": "{author} · {category}",
+    "trash": "Papelera ({count})",
+    "newRecipe": "Nueva receta"
+  },
+  "BookLink": {
+    "createdTitle": "Listo, el cuaderno está creado",
+    "title": "Link del cuaderno",
+    "lead": "Quien tenga este link puede ver y agregar recetas. Sin registro ni contraseña.",
+    "linkLabel": "Dirección del cuaderno",
+    "sendToGroup": "Enviar al grupo de la familia",
+    "sendToMe": "Enviarme el link por correo",
+    "whatsAppMessage": "Creé el cuaderno \"{title}\" para guardar las recetas de la familia. Abre el link, míralas y agrega las tuyas: {url}",
+    "mailSubject": "Link del cuaderno \"{title}\"",
+    "cloudNote": "Las recetas se guardan en internet, no en el celular. Si cambias o pierdes el teléfono, solo abre el link otra vez.",
+    "openBook": "Abrir el cuaderno"
+  },
+  "Categories": {
+    "sweets": "Dulces",
+    "savory": "Saladas",
+    "party": "Fiestas",
+    "drinks": "Bebidas",
+    "other": "Otras"
+  },
+  "RecipeForm": {
+    "newTitle": "Nueva receta",
+    "editTitle": "Editar receta",
+    "pasteHint": "¿Recibiste la receta por WhatsApp? Copia el texto del chat y pégalo abajo.",
+    "title": "Nombre de la receta",
+    "titlePlaceholder": "Ej.: Pastel de elote",
+    "titleRequired": "Escribe el nombre de la receta.",
+    "author": "¿De quién es la receta?",
+    "authorPlaceholder": "Ej.: Abuela Lucha",
+    "category": "Categoría",
+    "ingredients": "Ingredientes",
+    "ingredientsHint": "Uno por línea.",
+    "ingredientsPlaceholder": "3 huevos\n2 tazas de azúcar\n2 tazas de harina de maíz",
+    "steps": "Preparación",
+    "stepsHint": "Escríbela como la persona la enseñó. Cada línea es un paso.",
+    "stepsPlaceholder": "Licúa los huevos, el azúcar…",
+    "tip": "Consejo o recuerdo",
+    "tipPlaceholder": "Ej.: la abuela siempre lo hacía los domingos.",
+    "save": "Guardar receta",
+    "delete": "Mandar a la papelera",
+    "deleteConfirm": "¿Mandar esta receta a la papelera? Cualquiera con el cuaderno puede recuperarla en 30 días."
+  },
+  "Recipe": {
+    "back": "Recetas",
+    "textSize": "Tamaño de letra",
+    "smaller": "Letra más chica",
+    "bigger": "Letra más grande",
+    "byline": "Receta de {author}",
+    "bylineRich": "Receta de <strong>{author}</strong>",
+    "screenOn": "Pantalla siempre encendida",
+    "screenOnActive": "Encendida mientras la receta esté abierta",
+    "screenOnInactive": "Apagada",
+    "ingredients": "Ingredientes",
+    "ingredientsHint": "Toca para marcar lo que ya separaste.",
+    "steps": "Preparación",
+    "tip": "Consejo",
+    "tipBy": "Consejo de {author}",
+    "whatsApp": "WhatsApp",
+    "print": "Imprimir",
+    "edit": "Editar",
+    "messageLink": "Mírala en el cuaderno de la familia:"
+  },
+  "Trash": {
+    "title": "Papelera",
+    "lead": "Las recetas borradas se quedan aquí 30 días. Cualquiera con el cuaderno puede recuperarlas.",
+    "empty": "La papelera está vacía.",
+    "deletedOn": "Borrada el {date}",
+    "restore": "Recuperar"
+  },
+  "Print": {
+    "title": "Versión para imprimir",
+    "lead": "Hoja A4, letra grande y un código para abrir la receta en el celular otra vez.",
+    "whatToPrint": "Qué imprimir",
+    "onlyThisRecipe": "Solo esta receta",
+    "wholeBook": "El cuaderno completo",
+    "wholeBookHint": "Portada, índice y todas las recetas",
+    "includeTips": "Incluir consejos y recuerdos",
+    "print": "Imprimir o guardar en PDF",
+    "pdfHint": "Para tener el PDF, elige \"Guardar como PDF\" en la pantalla de impresión. Luego mándalo por WhatsApp.",
+    "preview": "Cómo va a quedar",
+    "emptyBook": "Todavía no hay recetas para imprimir.",
+    "coverSubtitle": "Recetas de la gente que queremos",
+    "coverMeta": "{count, plural, one {# receta} other {# recetas}} · impreso en {date}",
+    "contents": "Índice",
+    "qrHint": "Para verla en el celular o cambiar algo, apunta la cámara al código."
+  },
+  "Preview": {
+    "chip": "Recetario",
+    "cta": "Ábrelo y mira las recetas de la familia",
+    "alt": "Portada del cuaderno \"{title}\"",
+    "recipes": "{count, plural, =0 {Cuaderno nuevo, todavía sin recetas} one {# receta} other {# recetas}}"
+  },
+  "Share": {
+    "copy": "Copiar link",
+    "copied": "Copiado",
+    "copyFailed": "No se pudo copiar. Mantén presionado el link para copiarlo."
+  },
+  "Errors": {
+    "book_not_found": "No encontramos ese cuaderno. Revisa el link con quien te lo mandó.",
+    "book_title_required": "Ponle un nombre al cuaderno.",
+    "book_full": "El cuaderno llegó al límite de 500 recetas.",
+    "recipe_not_found": "Esa receta ya no está en el cuaderno. Quizás esté en la papelera.",
+    "recipe_title_required": "Escribe el nombre de la receta.",
+    "recipe_too_long": "La receta quedó demasiado larga. Intenta acortar la preparación.",
+    "rate_limited": "Creaste muchos cuadernos en poco tiempo. {period, select, day {Intenta de nuevo mañana.} other {Intenta de nuevo en una hora.}}",
+    "network": "Sin conexión. Tu cambio no se guardó.",
+    "unknown": "Algo salió mal. Intenta de nuevo."
+  },
+  "LocaleSwitcher": {
+    "label": "Idioma"
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "body": "Revisa el link o crea un cuaderno nuevo.",
+    "cta": "Crear un cuaderno"
+  },
+  "Legal": {
+    "about": "Acerca de",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "linksLabel": "Acerca de Recetas de Familia",
+    "updated": "Actualizado el {date}",
+    "back": "Volver",
+    "contactTitle": "Contacto",
+    "contactBody": "Dudas, solicitudes sobre tus datos o algo que no funciona: <link>{contact}</link>."
+  },
+  "About": {
+    "title": "Acerca de Recetas de Familia",
+    "intro": "Recetas de Familia guarda las recetas de la familia en un cuaderno que todos abren con el mismo link. Es gratis, sin registro y de código abierto.",
+    "sections": {
+      "access": {
+        "title": "Quién ve el cuaderno",
+        "p1": "El link del cuaderno es la llave: quien lo tenga puede ver, agregar y editar recetas, como un cuaderno olvidado en la mesa de la cocina. Manda el link solo a la familia.",
+        "p2": "Las recetas borradas van a la papelera y se pueden recuperar durante 30 días, así que un error tiene arreglo."
+      },
+      "safety": {
+        "title": "Cómo saber que es seguro",
+        "p1": "Recetas de Familia nunca pide contraseña, código de verificación, teléfono, documento, datos de tarjeta o pagos. Si una página te pide eso, no es Recetas de Familia.",
+        "p2": "Los links de Recetas de Familia empiezan con {host}."
+      },
+      "who": {
+        "title": "Quién lo hace",
+        "p1": "Recetas de Familia es un proyecto independiente, hecho en Brasil y mantenido por {operator}, los mismos de QuemLeva y AmigoSecreto."
+      },
+      "code": {
+        "title": "Código abierto",
+        "p1": "El código es abierto, bajo la licencia AGPL-3.0, y cualquiera puede revisar cómo funciona <repo>en GitHub</repo>."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Política de privacidad",
+    "intro": "Esta política explica, en palabras simples, qué datos guarda Recetas de Familia, para qué y por cuánto tiempo. No hay registro, y no vendemos ni compartimos datos para publicidad.",
+    "sections": {
+      "collect": {
+        "title": "Qué guardamos",
+        "p1": "El nombre del cuaderno y las recetas que escribe la familia: nombre, de quién es, categoría, ingredientes, preparación y consejos.",
+        "p2": "Un código aleatorio del dispositivo, que te reconoce sin registro.",
+        "p3": "Para evitar abusos, registramos la creación de cuadernos con una versión cifrada (hash) de la dirección IP. Ese registro se borra en máximo 1 día."
+      },
+      "visibility": {
+        "title": "Quién ve qué",
+        "p1": "Quien tenga el link del cuaderno ve todas las recetas y puede agregar, editar o mandar recetas a la papelera. La vista previa del link (en WhatsApp, por ejemplo) muestra solo el nombre del cuaderno y cuántas recetas tiene."
+      },
+      "device": {
+        "title": "En tu dispositivo",
+        "p1": "El navegador guarda el código del dispositivo, la lista de \"Mis cuadernos\", el tamaño de letra elegido y una cookie con el idioma. No usamos cookies de publicidad ni de rastreo."
+      },
+      "providers": {
+        "title": "Servicios que usamos",
+        "p1": "Supabase (base de datos, con servidores en São Paulo) y Vercel (alojamiento del sitio). Tratan los datos solo para que Recetas de Familia funcione y pueden guardar registros técnicos de acceso, como la dirección IP, según sus propias políticas."
+      },
+      "retention": {
+        "title": "Por cuánto tiempo",
+        "p1": "Los cuadernos se guardan mientras Recetas de Familia esté en línea, para que los links sigan funcionando. Las recetas borradas salen de la papelera después de 30 días. Puedes pedir que borremos un cuaderno por el contacto de abajo."
+      },
+      "rights": {
+        "title": "Tus derechos",
+        "p1": "Según la LGPD de Brasil, puedes pedir ver, corregir o borrar tus datos, o un cuaderno completo. Escribe al contacto de abajo e incluye el link del cuaderno."
+      },
+      "controller": {
+        "title": "Responsable",
+        "p1": "El responsable de los datos es {operator}. Si esta política cambia, se actualiza la fecha de arriba."
+      }
+    }
+  },
+  "Terms": {
+    "title": "Términos de uso",
+    "intro": "Al usar Recetas de Familia, aceptas estos términos.",
+    "sections": {
+      "service": {
+        "title": "El servicio",
+        "p1": "Recetas de Familia es gratis y se ofrece tal como está, sin garantía de que funcione siempre o sin errores. Puede cambiar o cerrar; siempre que sea posible, avisaremos antes."
+      },
+      "content": {
+        "title": "Lo que escribes",
+        "p1": "Eres responsable de lo que escribes en el cuaderno. No uses Recetas de Familia para contenido ilegal, ofensivo o engañoso, ni para spam. Podemos quitar cuadernos que no cumplan estas reglas.",
+        "p2": "Las recetas de tu familia siguen siendo de tu familia."
+      },
+      "links": {
+        "title": "Links",
+        "p1": "Quien tenga el link del cuaderno puede ver y cambiar las recetas. Mándalo solo a personas de confianza."
+      },
+      "license": {
+        "title": "Código abierto",
+        "p1": "El código de Recetas de Familia está bajo la licencia AGPL-3.0."
+      },
+      "law": {
+        "title": "Ley aplicable",
+        "p1": "Estos términos siguen las leyes de Brasil."
+      }
+    }
+  }
+}

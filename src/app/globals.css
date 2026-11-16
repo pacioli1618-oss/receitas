@@ -1,0 +1,132 @@
+/* Design tokens (Receitas da Família: paper, ink and tomato). Names follow docs/conventions.md.
+   The look comes from the approved mockups: cream paper, serif titles, large legible text. */
+:root {
+  color-scheme: light dark;
+
+  /* Color — light */
+  --surface: #fbf6ec;
+  --card: #ffffff;
+  --ink: #2b211a;
+  --ink-soft: #4a3d33;
+  --ink-muted: #6b5d50;
+  --border: #e6dccb;
+  --border-control: #8c7b68;
+  --divider: #f1e9dc;
+  --brand: #b5432b;
+  --brand-strong: #8f3220;
+  --brand-tint: #f6e3da;
+  --on-brand: #ffffff;
+  --ember: #9a5b00;
+  --ember-strong: #7a3f00;
+  --ember-tint: #fbf0dc;
+  --herb-tint: #eef3e6;
+  --herb-strong: #2f4220;
+  --screen-on: #fff8e8;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  /* Radius */
+  --radius-sm: 12px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* Size: larger than usual on purpose; the app is made for parents and grandparents. */
+  --size-control: 48px;
+  --size-field: 56px;
+  --size-cta: 60px;
+
+  /* Type */
+  --font-sans: var(--font-atkinson), "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-fraunces), "Fraunces", Georgia, serif;
+}
+
+/* Screen only: paper is always light, so printed pages keep dark text. */
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1a1512;
+    --card: #241d19;
+    --ink: #f4ede4;
+    --ink-soft: #d9ccbd;
+    --ink-muted: #b3a493;
+    --border: #3a2f28;
+    --border-control: #85766a;
+    --divider: #2e2520;
+    --brand: #f08a6e;
+    --brand-strong: #ffc4b3;
+    --brand-tint: #45241a;
+    --on-brand: #1a0c07;
+    --ember: #e3a548;
+    --ember-strong: #f5c77e;
+    --ember-tint: #3a2a12;
+    --herb-tint: #233020;
+    --herb-strong: #cfe3bd;
+    --screen-on: #3a2f1c;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--brand);
+}
+
+/* One focus style for every control: visible on keyboard, invisible on tap. */
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    background: #ffffff;
+  }
+}

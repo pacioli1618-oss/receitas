@@ -1,0 +1,263 @@
+{
+  "Brand": {
+    "name": "Receitas da Família",
+    "shortName": "Receitas",
+    "wordmarkFirst": "Receitas",
+    "wordmarkSecond": "da Família"
+  },
+  "Metadata": {
+    "title": "Receitas da Família — o caderno de receitas no celular de todo mundo",
+    "description": "Guarde as receitas da família num caderno que todos podem abrir pelo link: letra grande, tela sempre acesa e versão para imprimir. Sem cadastro."
+  },
+  "Common": {
+    "tagline": "Gratuito · Código aberto · Sem cadastro",
+    "endorsement": "um experimento GR1618 Labs",
+    "loading": "Carregando…",
+    "optional": "opcional",
+    "cancel": "Cancelar",
+    "back": "Voltar",
+    "backToBook": "Receitas",
+    "home": "Ir para o início",
+    "retry": "Tentar de novo"
+  },
+  "Home": {
+    "headline": "O caderno de receitas da família, no celular de todo mundo",
+    "intro": "Aquela receita de bolo da vó ou o tempero do pernil de Natal, guardados num lugar só. Quem tem o link pode ver e adicionar receitas.",
+    "createTitle": "Criar um caderno",
+    "title": "Nome do caderno",
+    "titleHint": "Aparece no topo do caderno e na capa da versão impressa.",
+    "titlePlaceholder": "Caderno da Família Souza",
+    "titleRequired": "Dê um nome ao caderno.",
+    "submit": "Criar o caderno",
+    "myBooks": "Meus cadernos",
+    "forget": "Tirar deste celular",
+    "forgetConfirm": "Tirar \"{title}\" deste celular? O caderno continua existindo para a família; você só perde o atalho aqui."
+  },
+  "Book": {
+    "bookLink": "Link do caderno",
+    "emptyTitle": "O caderno ainda está vazio.",
+    "emptyHint": "Comece pela receita que mais faz falta: aquela que alguém sempre pede no grupo.",
+    "searchLabel": "Buscar receita",
+    "searchPlaceholder": "Buscar receita ou pessoa",
+    "categoriesLabel": "Filtrar por categoria",
+    "allCategories": "Todas",
+    "recipeCount": "{count, plural, =0 {Nenhuma receita} one {# receita} other {# receitas}}",
+    "printBook": "Imprimir o caderno",
+    "noMatch": "Nenhuma receita com esse nome. Tente outra palavra.",
+    "fromWithCategory": "{author} · {category}",
+    "trash": "Lixeira ({count})",
+    "newRecipe": "Nova receita"
+  },
+  "BookLink": {
+    "createdTitle": "Pronto, o caderno foi criado",
+    "title": "Link do caderno",
+    "lead": "Quem tiver este link pode ver e adicionar receitas. Não precisa de cadastro nem de senha.",
+    "linkLabel": "Endereço do caderno",
+    "sendToGroup": "Mandar no grupo da família",
+    "sendToMe": "Enviar o link para meu e-mail",
+    "whatsAppMessage": "Criei o caderno \"{title}\" para guardar as receitas da família. Abra pelo link, veja e adicione as suas: {url}",
+    "mailSubject": "Link do caderno \"{title}\"",
+    "cloudNote": "As receitas ficam guardadas na internet, não no celular. Se trocar ou perder o aparelho, é só abrir o link de novo.",
+    "openBook": "Abrir o caderno"
+  },
+  "Categories": {
+    "sweets": "Doces",
+    "savory": "Salgados",
+    "party": "Festas",
+    "drinks": "Bebidas",
+    "other": "Outras"
+  },
+  "RecipeForm": {
+    "newTitle": "Nova receita",
+    "editTitle": "Editar receita",
+    "pasteHint": "Recebeu a receita no WhatsApp? Copie o texto da conversa e cole aqui embaixo.",
+    "title": "Nome da receita",
+    "titlePlaceholder": "Ex.: Bolo de fubá",
+    "titleRequired": "Escreva o nome da receita.",
+    "author": "De quem é a receita?",
+    "authorPlaceholder": "Ex.: Vó Lurdes",
+    "category": "Categoria",
+    "ingredients": "Ingredientes",
+    "ingredientsHint": "Um por linha.",
+    "ingredientsPlaceholder": "3 ovos\n2 xícaras de açúcar\n2 xícaras de fubá",
+    "steps": "Modo de preparo",
+    "stepsHint": "Escreva do jeito que a pessoa ensinou. Cada linha vira um passo.",
+    "stepsPlaceholder": "Bata no liquidificador os ovos, o açúcar…",
+    "tip": "Dica ou lembrança",
+    "tipPlaceholder": "Ex.: a vó sempre fazia no domingo.",
+    "save": "Salvar receita",
+    "delete": "Mandar para a lixeira",
+    "deleteConfirm": "Mandar esta receita para a lixeira? Qualquer pessoa do caderno pode recuperá-la em até 30 dias."
+  },
+  "Recipe": {
+    "back": "Receitas",
+    "textSize": "Tamanho da letra",
+    "smaller": "Diminuir a letra",
+    "bigger": "Aumentar a letra",
+    "byline": "Receita de {author}",
+    "bylineRich": "Receita de <strong>{author}</strong>",
+    "screenOn": "Tela sempre acesa",
+    "screenOnActive": "Ligada enquanto a receita estiver aberta",
+    "screenOnInactive": "Desligada",
+    "ingredients": "Ingredientes",
+    "ingredientsHint": "Toque para marcar o que já separou.",
+    "steps": "Modo de preparo",
+    "tip": "Dica",
+    "tipBy": "Dica de {author}",
+    "whatsApp": "WhatsApp",
+    "print": "Imprimir",
+    "edit": "Editar",
+    "messageLink": "Veja no caderno da família:"
+  },
+  "Trash": {
+    "title": "Lixeira",
+    "lead": "Receitas apagadas ficam aqui por 30 dias. Qualquer pessoa do caderno pode recuperar.",
+    "empty": "A lixeira está vazia.",
+    "deletedOn": "Apagada em {date}",
+    "restore": "Recuperar"
+  },
+  "Print": {
+    "title": "Versão para imprimir",
+    "lead": "Folha A4, letra grande e um código para abrir a receita no celular de novo.",
+    "whatToPrint": "O que imprimir",
+    "onlyThisRecipe": "Só esta receita",
+    "wholeBook": "O caderno inteiro",
+    "wholeBookHint": "Capa, sumário e todas as receitas",
+    "includeTips": "Incluir as dicas e lembranças",
+    "print": "Imprimir ou salvar em PDF",
+    "pdfHint": "Para ter o PDF, escolha \"Salvar como PDF\" na tela de impressão. Depois é só mandar o arquivo no WhatsApp.",
+    "preview": "Como vai ficar",
+    "emptyBook": "Ainda não há receitas para imprimir.",
+    "coverSubtitle": "Receitas de quem a gente ama",
+    "coverMeta": "{count, plural, one {# receita} other {# receitas}} · impresso em {date}",
+    "contents": "Sumário",
+    "qrHint": "Para ver no celular ou mudar alguma coisa, aponte a câmera para o código."
+  },
+  "Preview": {
+    "chip": "Caderno de receitas",
+    "cta": "Abra e veja as receitas da família",
+    "alt": "Capa do caderno \"{title}\"",
+    "recipes": "{count, plural, =0 {Caderno novo, ainda sem receitas} one {# receita} other {# receitas}}"
+  },
+  "Share": {
+    "copy": "Copiar link",
+    "copied": "Copiado",
+    "copyFailed": "Não deu para copiar. Toque e segure no link para copiar."
+  },
+  "Errors": {
+    "book_not_found": "Não achamos esse caderno. Confira o link com quem te mandou.",
+    "book_title_required": "Dê um nome ao caderno.",
+    "book_full": "O caderno chegou ao limite de 500 receitas.",
+    "recipe_not_found": "Essa receita não está mais no caderno. Talvez esteja na lixeira.",
+    "recipe_title_required": "Escreva o nome da receita.",
+    "recipe_too_long": "A receita ficou longa demais. Tente encurtar o modo de preparo.",
+    "rate_limited": "Você criou muitos cadernos em pouco tempo. {period, select, day {Tente de novo amanhã.} other {Tente de novo daqui a uma hora.}}",
+    "network": "Sem conexão. Sua alteração não foi salva.",
+    "unknown": "Algo deu errado. Tente de novo."
+  },
+  "LocaleSwitcher": {
+    "label": "Idioma"
+  },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "body": "Confira o link ou crie um caderno novo.",
+    "cta": "Criar um caderno"
+  },
+  "Legal": {
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "linksLabel": "Sobre o Receitas da Família",
+    "updated": "Atualizado em {date}",
+    "back": "Voltar",
+    "contactTitle": "Contato",
+    "contactBody": "Dúvidas, pedidos sobre seus dados ou algo errado: <link>{contact}</link>."
+  },
+  "About": {
+    "title": "Sobre o Receitas da Família",
+    "intro": "O Receitas da Família guarda as receitas da família num caderno que todos abrem pelo mesmo link. É gratuito, sem cadastro e de código aberto.",
+    "sections": {
+      "access": {
+        "title": "Quem vê o caderno",
+        "p1": "O link do caderno é a chave: quem tem o link pode ver, adicionar e editar receitas, como um caderno deixado na mesa da cozinha. Mande o link só para a família.",
+        "p2": "Receitas apagadas vão para a lixeira e podem ser recuperadas por 30 dias, então um engano tem conserto."
+      },
+      "safety": {
+        "title": "Como saber que é seguro",
+        "p1": "O Receitas da Família nunca pede senha, código de verificação, telefone, CPF, dados de cartão ou pagamento. Se uma página pedir isso, não é o Receitas da Família.",
+        "p2": "Os links do Receitas da Família começam com {host}."
+      },
+      "who": {
+        "title": "Quem faz",
+        "p1": "O Receitas da Família é um projeto independente, feito no Brasil e mantido por {operator}, os mesmos do QuemLeva e do AmigoSecreto."
+      },
+      "code": {
+        "title": "Código aberto",
+        "p1": "O código é aberto, sob a licença AGPL-3.0, e qualquer pessoa pode conferir como funciona <repo>no GitHub</repo>."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Política de privacidade",
+    "intro": "Esta política explica, em linguagem simples, quais dados o Receitas da Família guarda, para quê e por quanto tempo. Não há cadastro, e não vendemos nem compartilhamos dados para publicidade.",
+    "sections": {
+      "collect": {
+        "title": "O que guardamos",
+        "p1": "O nome do caderno e as receitas que a família escreve: nome, de quem é, categoria, ingredientes, modo de preparo e dicas.",
+        "p2": "Um código aleatório do aparelho, que reconhece você sem cadastro.",
+        "p3": "Para evitar abuso, registramos a criação de cadernos com uma versão embaralhada (hash) do endereço IP. Esse registro é apagado em até 1 dia."
+      },
+      "visibility": {
+        "title": "Quem vê o quê",
+        "p1": "Quem tem o link do caderno vê todas as receitas e pode adicionar, editar ou mandar receitas para a lixeira. A prévia do link (no WhatsApp, por exemplo) mostra só o nome do caderno e quantas receitas ele tem."
+      },
+      "device": {
+        "title": "No seu aparelho",
+        "p1": "O navegador guarda o código do aparelho, a lista de \"Meus cadernos\", o tamanho da letra escolhido e um cookie com o idioma. Não usamos cookies de publicidade nem de rastreamento."
+      },
+      "providers": {
+        "title": "Serviços que usamos",
+        "p1": "Supabase (banco de dados, com servidores em São Paulo) e Vercel (hospedagem do site). Eles tratam os dados só para o Receitas da Família funcionar e podem manter registros técnicos de acesso, como o endereço IP, conforme as próprias políticas."
+      },
+      "retention": {
+        "title": "Por quanto tempo",
+        "p1": "Os cadernos ficam guardados enquanto o Receitas da Família estiver no ar, para que os links continuem funcionando. Receitas apagadas saem da lixeira depois de 30 dias. Você pode pedir a exclusão de um caderno pelo contato abaixo."
+      },
+      "rights": {
+        "title": "Seus direitos",
+        "p1": "Pela LGPD, você pode pedir para ver, corrigir ou apagar os seus dados, ou um caderno inteiro. Escreva para o contato abaixo e mande junto o link do caderno."
+      },
+      "controller": {
+        "title": "Responsável",
+        "p1": "O responsável pelos dados é {operator}. Se esta política mudar, a data no topo é atualizada."
+      }
+    }
+  },
+  "Terms": {
+    "title": "Termos de uso",
+    "intro": "Ao usar o Receitas da Família, você concorda com estes termos.",
+    "sections": {
+      "service": {
+        "title": "O serviço",
+        "p1": "O Receitas da Família é gratuito e oferecido como está, sem garantia de que vai funcionar sempre ou sem erros. Ele pode mudar ou ser encerrado; sempre que possível, avisaremos antes."
+      },
+      "content": {
+        "title": "O que você escreve",
+        "p1": "Você é responsável pelo que escreve no caderno. Não use o Receitas da Família para conteúdo ilegal, ofensivo ou enganoso, nem para spam. Podemos remover cadernos que descumpram estas regras.",
+        "p2": "As receitas da sua família continuam sendo da sua família."
+      },
+      "links": {
+        "title": "Links",
+        "p1": "Quem tem o link do caderno pode ver e mudar as receitas. Mande o link só para quem você confia."
+      },
+      "license": {
+        "title": "Código aberto",
+        "p1": "O código do Receitas da Família está sob a licença AGPL-3.0."
+      },
+      "law": {
+        "title": "Lei aplicável",
+        "p1": "Estes termos seguem as leis do Brasil."
+      }
+    }
+  }
+}

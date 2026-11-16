@@ -1,0 +1,263 @@
+{
+  "Brand": {
+    "name": "Family Recipes",
+    "shortName": "Recipes",
+    "wordmarkFirst": "Family",
+    "wordmarkSecond": "Recipes"
+  },
+  "Metadata": {
+    "title": "Family Recipes — the family recipe book on everyone's phone",
+    "description": "Keep the family's recipes in one book everyone opens from a link: large text, screen kept on and a printable version. No sign-up."
+  },
+  "Common": {
+    "tagline": "Free · Open source · No sign-up",
+    "endorsement": "a GR1618 Labs experiment",
+    "loading": "Loading…",
+    "optional": "optional",
+    "cancel": "Cancel",
+    "back": "Back",
+    "backToBook": "Recipes",
+    "home": "Go to the start",
+    "retry": "Try again"
+  },
+  "Home": {
+    "headline": "The family recipe book, on everyone's phone",
+    "intro": "Grandma's cake or the Christmas roast seasoning, kept in one place. Anyone with the link can read and add recipes.",
+    "createTitle": "Create a book",
+    "title": "Book name",
+    "titleHint": "Shown at the top of the book and on the cover of the printed version.",
+    "titlePlaceholder": "The Smith Family Recipes",
+    "titleRequired": "Give the book a name.",
+    "submit": "Create the book",
+    "myBooks": "My books",
+    "forget": "Remove from this phone",
+    "forgetConfirm": "Remove \"{title}\" from this phone? The book stays there for the family; you only lose the shortcut here."
+  },
+  "Book": {
+    "bookLink": "Book link",
+    "emptyTitle": "The book is still empty.",
+    "emptyHint": "Start with the recipe people miss the most: the one someone always asks for in the group chat.",
+    "searchLabel": "Search recipes",
+    "searchPlaceholder": "Search a recipe or a person",
+    "categoriesLabel": "Filter by category",
+    "allCategories": "All",
+    "recipeCount": "{count, plural, =0 {No recipes} one {# recipe} other {# recipes}}",
+    "printBook": "Print the book",
+    "noMatch": "No recipe with that name. Try another word.",
+    "fromWithCategory": "{author} · {category}",
+    "trash": "Trash ({count})",
+    "newRecipe": "New recipe"
+  },
+  "BookLink": {
+    "createdTitle": "Done, the book is ready",
+    "title": "Book link",
+    "lead": "Anyone with this link can read and add recipes. No sign-up, no password.",
+    "linkLabel": "Book address",
+    "sendToGroup": "Send to the family group",
+    "sendToMe": "E-mail the link to myself",
+    "whatsAppMessage": "I made the book \"{title}\" to keep the family's recipes. Open the link to read them and add yours: {url}",
+    "mailSubject": "Link to the book \"{title}\"",
+    "cloudNote": "Recipes are kept online, not on the phone. If you change or lose your phone, just open the link again.",
+    "openBook": "Open the book"
+  },
+  "Categories": {
+    "sweets": "Sweets",
+    "savory": "Savory",
+    "party": "Holidays",
+    "drinks": "Drinks",
+    "other": "Other"
+  },
+  "RecipeForm": {
+    "newTitle": "New recipe",
+    "editTitle": "Edit recipe",
+    "pasteHint": "Got the recipe on WhatsApp? Copy the text from the chat and paste it below.",
+    "title": "Recipe name",
+    "titlePlaceholder": "E.g. Cornmeal cake",
+    "titleRequired": "Write the recipe's name.",
+    "author": "Whose recipe is it?",
+    "authorPlaceholder": "E.g. Grandma Lou",
+    "category": "Category",
+    "ingredients": "Ingredients",
+    "ingredientsHint": "One per line.",
+    "ingredientsPlaceholder": "3 eggs\n2 cups of sugar\n2 cups of cornmeal",
+    "steps": "Method",
+    "stepsHint": "Write it the way the person taught it. Each line becomes a step.",
+    "stepsPlaceholder": "Blend the eggs, the sugar…",
+    "tip": "Tip or memory",
+    "tipPlaceholder": "E.g. Grandma always made it on Sundays.",
+    "save": "Save recipe",
+    "delete": "Move to trash",
+    "deleteConfirm": "Move this recipe to the trash? Anyone with the book can bring it back within 30 days."
+  },
+  "Recipe": {
+    "back": "Recipes",
+    "textSize": "Text size",
+    "smaller": "Smaller text",
+    "bigger": "Larger text",
+    "byline": "{author}'s recipe",
+    "bylineRich": "<strong>{author}</strong>'s recipe",
+    "screenOn": "Keep screen on",
+    "screenOnActive": "On while this recipe is open",
+    "screenOnInactive": "Off",
+    "ingredients": "Ingredients",
+    "ingredientsHint": "Tap to tick off what you already have out.",
+    "steps": "Method",
+    "tip": "Tip",
+    "tipBy": "{author}'s tip",
+    "whatsApp": "WhatsApp",
+    "print": "Print",
+    "edit": "Edit",
+    "messageLink": "See it in the family book:"
+  },
+  "Trash": {
+    "title": "Trash",
+    "lead": "Deleted recipes stay here for 30 days. Anyone with the book can bring them back.",
+    "empty": "The trash is empty.",
+    "deletedOn": "Deleted on {date}",
+    "restore": "Restore"
+  },
+  "Print": {
+    "title": "Printable version",
+    "lead": "A4 sheet, large text and a code to open the recipe on a phone again.",
+    "whatToPrint": "What to print",
+    "onlyThisRecipe": "Just this recipe",
+    "wholeBook": "The whole book",
+    "wholeBookHint": "Cover, contents and every recipe",
+    "includeTips": "Include tips and memories",
+    "print": "Print or save as PDF",
+    "pdfHint": "For a PDF, choose \"Save as PDF\" on the print screen. Then send the file on WhatsApp.",
+    "preview": "Preview",
+    "emptyBook": "There are no recipes to print yet.",
+    "coverSubtitle": "Recipes from the people we love",
+    "coverMeta": "{count, plural, one {# recipe} other {# recipes}} · printed {date}",
+    "contents": "Contents",
+    "qrHint": "To see it on a phone or change something, point the camera at the code."
+  },
+  "Preview": {
+    "chip": "Recipe book",
+    "cta": "Open it and see the family's recipes",
+    "alt": "Cover of the book \"{title}\"",
+    "recipes": "{count, plural, =0 {A new book, no recipes yet} one {# recipe} other {# recipes}}"
+  },
+  "Share": {
+    "copy": "Copy link",
+    "copied": "Copied",
+    "copyFailed": "Couldn't copy. Tap and hold the link to copy it."
+  },
+  "Errors": {
+    "book_not_found": "We couldn't find that book. Check the link with whoever sent it.",
+    "book_title_required": "Give the book a name.",
+    "book_full": "The book has reached its limit of 500 recipes.",
+    "recipe_not_found": "That recipe is no longer in the book. It may be in the trash.",
+    "recipe_title_required": "Write the recipe's name.",
+    "recipe_too_long": "The recipe is too long. Try shortening the method.",
+    "rate_limited": "You created many books in a short time. {period, select, day {Try again tomorrow.} other {Try again in an hour.}}",
+    "network": "No connection. Your change was not saved.",
+    "unknown": "Something went wrong. Try again."
+  },
+  "LocaleSwitcher": {
+    "label": "Language"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "Check the link or create a new book.",
+    "cta": "Create a book"
+  },
+  "Legal": {
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "linksLabel": "About Family Recipes",
+    "updated": "Updated {date}",
+    "back": "Back",
+    "contactTitle": "Contact",
+    "contactBody": "Questions, requests about your data or something wrong: <link>{contact}</link>."
+  },
+  "About": {
+    "title": "About Family Recipes",
+    "intro": "Family Recipes keeps the family's recipes in one book everyone opens from the same link. It is free, has no sign-up and is open source.",
+    "sections": {
+      "access": {
+        "title": "Who can see the book",
+        "p1": "The book link is the key: anyone with it can read, add and edit recipes, like a notebook left on the kitchen table. Send the link only to family.",
+        "p2": "Deleted recipes go to the trash and can be restored for 30 days, so mistakes can be undone."
+      },
+      "safety": {
+        "title": "How to tell it's safe",
+        "p1": "Family Recipes never asks for a password, verification code, phone number, ID, card or payment details. If a page asks for that, it is not Family Recipes.",
+        "p2": "Family Recipes links start with {host}."
+      },
+      "who": {
+        "title": "Who makes it",
+        "p1": "Family Recipes is an independent project, made in Brazil and run by {operator}, the people behind QuemLeva and AmigoSecreto."
+      },
+      "code": {
+        "title": "Open source",
+        "p1": "The code is open, under the AGPL-3.0 license, and anyone can check how it works <repo>on GitHub</repo>."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Privacy policy",
+    "intro": "This policy explains, in plain words, what Family Recipes keeps, why and for how long. There is no sign-up, and we don't sell or share data for advertising.",
+    "sections": {
+      "collect": {
+        "title": "What we keep",
+        "p1": "The book's name and the recipes the family writes: name, whose recipe it is, category, ingredients, method and tips.",
+        "p2": "A random code for the device, which recognizes you without an account.",
+        "p3": "To prevent abuse, we log book creation with a scrambled (hashed) version of the IP address. That log is deleted within 1 day."
+      },
+      "visibility": {
+        "title": "Who sees what",
+        "p1": "Anyone with the book link sees every recipe and can add, edit or move recipes to the trash. The link preview (on WhatsApp, for example) shows only the book's name and how many recipes it has."
+      },
+      "device": {
+        "title": "On your device",
+        "p1": "The browser keeps the device code, the \"My books\" list, your text size and a cookie with your language. We use no advertising or tracking cookies."
+      },
+      "providers": {
+        "title": "Services we use",
+        "p1": "Supabase (database, servers in São Paulo) and Vercel (website hosting). They handle data only so Family Recipes works and may keep technical access logs, such as the IP address, under their own policies."
+      },
+      "retention": {
+        "title": "How long",
+        "p1": "Books are kept while Family Recipes is online, so links keep working. Deleted recipes leave the trash after 30 days. You can ask us to delete a book through the contact below."
+      },
+      "rights": {
+        "title": "Your rights",
+        "p1": "Under Brazil's LGPD, you can ask to see, correct or delete your data, or a whole book. Write to the contact below and include the book link."
+      },
+      "controller": {
+        "title": "Controller",
+        "p1": "The data controller is {operator}. If this policy changes, the date at the top is updated."
+      }
+    }
+  },
+  "Terms": {
+    "title": "Terms of use",
+    "intro": "By using Family Recipes, you agree to these terms.",
+    "sections": {
+      "service": {
+        "title": "The service",
+        "p1": "Family Recipes is free and provided as is, with no guarantee that it will always work or be error-free. It may change or shut down; whenever possible, we will warn you first."
+      },
+      "content": {
+        "title": "What you write",
+        "p1": "You are responsible for what you write in the book. Don't use Family Recipes for illegal, offensive or misleading content, or for spam. We may remove books that break these rules.",
+        "p2": "Your family's recipes remain your family's."
+      },
+      "links": {
+        "title": "Links",
+        "p1": "Anyone with the book link can see and change the recipes. Send the link only to people you trust."
+      },
+      "license": {
+        "title": "Open source",
+        "p1": "The Family Recipes code is under the AGPL-3.0 license."
+      },
+      "law": {
+        "title": "Governing law",
+        "p1": "These terms follow the laws of Brazil."
+      }
+    }
+  }
+}
