@@ -2,10 +2,11 @@ import type {ReactNode} from 'react';
 import {useTranslations} from 'next-intl';
 import {Logo} from '@/components/brand/Logo';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
+import {ThemeSwitcher} from '@/components/ThemeSwitcher';
 import {Link} from '@/i18n/navigation';
 import styles from './Screen.module.css';
 
-/** Logo (back to the home page) and the language switcher, or a back link on inner screens. */
+/** Logo (back to the home page) and the theme and language switchers, or a back link on inner screens. */
 export function AppHeader({back}: {back?: ReactNode}) {
   const t = useTranslations('Brand');
   return (
@@ -15,7 +16,10 @@ export function AppHeader({back}: {back?: ReactNode}) {
           <Logo wordmark={{first: t('wordmarkFirst'), second: t('wordmarkSecond')}} />
         </Link>
       )}
-      <LocaleSwitcher />
+      <div className={styles.headerControls}>
+        <ThemeSwitcher />
+        <LocaleSwitcher />
+      </div>
     </header>
   );
 }

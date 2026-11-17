@@ -1,7 +1,7 @@
 /* Design tokens (Receitas da Família: paper, ink and tomato). Names follow docs/conventions.md.
    The look comes from the approved mockups: cream paper, serif titles, large legible text. */
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   /* Color — light */
   --surface: #fbf6ec;
@@ -47,9 +47,11 @@
   --font-serif: var(--font-fraunces), "Fraunces", Georgia, serif;
 }
 
-/* Screen only: paper is always light, so printed pages keep dark text. */
-@media screen and (prefers-color-scheme: dark) {
-  :root {
+/* Dark theme: <html data-theme="dark">, set by src/lib/theme.ts from the device or the header button.
+   Screen only: paper is always light, so printed pages keep dark text. */
+@media screen {
+  :root[data-theme='dark'] {
+    color-scheme: dark;
     --surface: #1a1512;
     --card: #241d19;
     --ink: #f4ede4;

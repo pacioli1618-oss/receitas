@@ -4,6 +4,7 @@ import {getLocale, getTranslations} from 'next-intl/server';
 import localFont from 'next/font/local';
 import {InstallListener} from '@/components/install/InstallListener';
 import {routing} from '@/i18n/routing';
+import {themeScript} from '@/lib/theme';
 import '../globals.css';
 
 // Fonts served by the app itself (OFL licenses in app/fonts/OFL.txt): opening a book link
@@ -63,7 +64,11 @@ export default async function LocaleLayout({children}: LayoutProps<'/[locale]'>)
   const locale = await getLocale();
 
   return (
-    <html lang={locale} className={`${atkinson.variable} ${fraunces.variable}`}>
+    <html lang={locale} className={`${atkinson.variable} ${fraunces.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Sets data-theme before the first paint (src/lib/theme.ts). */}
+        <script dangerouslySetInnerHTML={{__html: themeScript}} />
+      </head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <InstallListener />
