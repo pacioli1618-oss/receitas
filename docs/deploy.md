@@ -20,7 +20,6 @@ upload policy (only into the folder of an existing recipe). Both were applied on
    | `NEXT_PUBLIC_SUPABASE_URL` | `https://uqkyhzvdwynpkqdiuvyn.supabase.co` |
    | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | the publishable key (`.env.example`) |
    | `NEXT_PUBLIC_SITE_URL` | optional: `https://receitas.gr1618.io` (base of the link-preview image URL) |
-   | `NEXT_PUBLIC_CONTACT_EMAIL` | optional: contact on About, Privacy and Terms; without it, GitHub issues |
 
    Both Supabase values are public by design: the browser calls the `rc_*` RPCs directly and the
    tables are not exposed.
